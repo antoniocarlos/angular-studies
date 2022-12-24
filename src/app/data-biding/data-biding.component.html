@@ -1,0 +1,20 @@
+<!-- Property biding -->
+{{ name }}
+<hr>
+<!-- neste caso o html vai mostrar disabled -->
+<button [disabled]="checkDisabled">Disabled</button>
+<!-- neste caso o disabled vai apontar para a variável checkDisabled  -->
+<button disabled="checkDisabled">Disabled</button>
+<br/>
+<!-- Event binding -->
+<button (click)="onClick($event)">Click</button>
+<br/>
+<div (mousemove)="mousemoveTest($event)" (mouseleave)="mousemoveTest($event)" style="background-color: red; width: 300px; height: 300px;"></div>
+<br/>
+<p>posição x:{{ position.x }} posição y:{{ position.y }}</p>
+<br/>
+<hr>
+<h2>Two-way binding</h2>
+<br>
+<input [(ngModel)]="name" />
+{{ name }}

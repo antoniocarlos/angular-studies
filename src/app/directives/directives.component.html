@@ -1,0 +1,42 @@
+<!-- A sintaxe das diretivas é chamada de syntaxSugar -->
+<p *ngIf="condition; else elseBlock">True</p>
+<ng-template #elseBlock>
+  <p>False</p>
+</ng-template>
+
+<hr>
+
+<p *ngIf="condition2">
+  True
+</p>
+<p *ngIf="!condition2">
+  False
+</p>
+
+<button (click)="toggleCondition2()">Click</button>
+
+<hr>
+
+<ul>
+  <li *ngFor="let item of list; let i = index" (click)="removeItem(i)">[{{ i }}] - Nome: {{ item.name }} - Idade: {{item.age}}</li>
+</ul>
+
+<button (click)="addList('test', 10)">Adiciona a lista</button>
+
+<hr>
+
+<input [(ngModel)]="name">
+
+<div [ngSwitch]="name">
+  <p *ngSwitchCase="'eu'">
+    eu
+  </p>
+
+  <p *ngSwitchCase="'eles'">
+    eles
+  </p>
+
+  <p *ngSwitchDefault>
+    Nan
+  </p>
+</div>
