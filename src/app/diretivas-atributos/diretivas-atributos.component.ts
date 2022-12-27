@@ -10,9 +10,12 @@ export class DiretivasAtributosComponent implements OnInit {
 
   public active: boolean = false;
 
+  public height: string = '100px';
+
   ngOnInit(): void {
     setInterval(() => {
       this.active = !this.active;
+      this.height = this.height === '100px' ? '500px' : '100px';
     }, 1000)
   }
 }
