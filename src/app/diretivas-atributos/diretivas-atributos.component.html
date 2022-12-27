@@ -1,2 +1,17 @@
 <p [ngClass]="{'active': active, 'disabled':!active}"> NG Class</p>
 <p [ngStyle]="{'height': height}"> NG Class</p>
+
+<hr>
+
+<input [(ngModel)]="name"> {{name}}
+
+<ng-template [ngIf]="true">
+  <p>ngIf</p>
+</ng-template>
+
+
+<hr>
+
+<ng-template ngFor let-item [ngForOf]="list">
+  <p>{{item.name}}</p>
+</ng-template>
