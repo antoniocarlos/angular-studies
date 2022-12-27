@@ -13,7 +13,8 @@ import { Component } from '@angular/core';
     <br /> -->
     <!-- <app-data-biding></app-data-biding> -->
     <!-- <app-life-cycle></app-life-cycle> -->
-    <app-directives></app-directives>
+    <!-- <app-directives></app-directives> -->
+    <app-diretivas-atributos></app-diretivas-atributos>
     <router-outlet></router-outlet>
   `
 })

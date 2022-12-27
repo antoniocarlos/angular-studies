@@ -9,6 +9,7 @@ import { DataBidingComponent } from './data-biding/data-biding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atributos.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
     TitleComponent,
     DataBidingComponent,
     DirectivesComponent,
-    LifeCycleComponent
+    LifeCycleComponent,
+    DiretivasAtributosComponent
   ],
   imports: [
     BrowserModule,
